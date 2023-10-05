@@ -1,0 +1,13 @@
+var person = {
+    firstName : "manisha",
+    lastName : "Doddapaneni",
+    fullName : function(){
+        return this.firstName + " " + this.lastName;
+    }
+};
+var anotherPerson = {
+    firstName : "Kolluru",
+    lastName : "karthika"
+};
+var fullName = person.fullName.call(anotherPerson);
+console.log(fullName);
