@@ -1,0 +1,6 @@
+et map = new Map();
+map.set('name', 'Jack');
+map.set('age', '27');
+for (let [key, value] of map) {
+    console.log(key + '- ' + value);
+}
