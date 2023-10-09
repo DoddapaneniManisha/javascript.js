@@ -1,0 +1,14 @@
+const name = 'Jack';
+const greet = true;
+
+function tagExample(strings, nameValue) {
+    let str0 = strings[0]; 
+    let str1 = strings[1]; 
+
+    if(greet) {
+        return `${str0}${nameValue}${str1}`;
+    }
+}
+const result = tagExample`Hello ${name}, How are you?`;
+
+console.log(result);
