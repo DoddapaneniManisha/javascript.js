@@ -1,0 +1,20 @@
+var numberArray = [];
+function addNumber()
+{
+    var userInput = prompt("enter a number(or 'done' to finish):");
+    if (userInput.toLowerCase() ==='done')
+    {
+        return;
+    }
+    var number = parseFloat(userInput);
+    if(!isNaN(number))
+    {
+        numberArray.push(number);
+    }
+    else{
+        console.log("Invalid input.please enter a valid number");
+    }
+    addNumber();
+}
+addNumber();
+console.log("Array of numbers:" +numberArray);
